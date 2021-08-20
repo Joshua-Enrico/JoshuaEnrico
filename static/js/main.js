@@ -26,10 +26,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* SCROLL REVEAL ANIMATION */
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+    origin: 'left',
+    distance: '40px',
+    duration: 1000,
+    reset: false
 });
 
 /* SCROLL HOME */
@@ -48,12 +48,12 @@ sr.reveal('.about__project-img',{delay: 600});
 /* SCROOL SKILLS*/
 sr.reveal('.skills__subtitle',{});
 sr.reveal('.skills__text',{});
-sr.reveal('.skills__data',{interval: 400});
+sr.reveal('.skills__data',{interval: 150});
 sr.reveal('.skills__img',{delay: 600});
 
 /*WORK*/
 
-sr.reveal('.work__img',{interval: 300});
+sr.reveal('.work__img',{interval: 100});
 
 /*SCROLL CONTACT*/ 
 sr.reveal('.contact__input',{interval: 200})

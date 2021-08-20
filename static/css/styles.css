@@ -79,6 +79,27 @@ h2,
 p {
   margin: 0;
 }
+@media screen and (min-width: 1000px) {
+  .sit p {
+    margin: 0 20px 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sit p {
+    margin: 0 150px 20px 150px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .sit p {
+    margin: 0 250px 20px 250px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .sit p {
+    margin: 0 550px 20px 550px;
+  }
+}
 ul {
   margin: 0;
   padding: 0;
@@ -258,7 +279,7 @@ img {
 
 /* About*/
 .about {
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 15rem);
   row-gap: 1rem;
 }
 .about__container {
@@ -373,7 +394,7 @@ img {
   .work__subtitle:hover {
       transform: scale(1.1);
       cursor: pointer;
-      transition: 1.5s;
+      transition: 0.5s;
   }
 .work__container {
   row-gap: 2rem;
@@ -385,7 +406,7 @@ img {
 }
 
 .work__img img{
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
   }
   .work__img img:hover{
@@ -504,9 +525,11 @@ img {
     .about__container, .skills__container{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
-        text-align: initial;
+        text-align: center;
     }
-
+    .biger {
+      font-size: 30px;
+    }
     .about__img img {
         width: 300px;
     }

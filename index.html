@@ -1,228 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:url" content="joshua.space">
-    <meta property="og:site_name" content="Joshua Enrico PORTFOLIO">
-    <meta property="og:url" content="joshua.space">
-    <meta property="og:description" content="Joshua Enrico  PORTFOLIO / software developer in progress">
-    <!-- CSS-->
-    <link rel="stylesheet" href="static/css/styles.css">
 
-    <!-- Box icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:url" content="joshua.space">
+  <meta property="og:site_name" content="Joshua Enrico PORTFOLIO">
+  <meta property="og:url" content="joshua.space">
+  <meta property="og:description" content="Joshua Enrico  PORTFOLIO / software developer in progress">
+  <!-- CSS-->
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="icon" href="static/img/portafolio.png">
 
-    <title>Portofolio</title>
-  </head>
-  <body>
-    <!-- HEADER-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
+  <!-- Box icons-->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Joshua Enrico</title>
+</head>
+
+<body>
+  <!-- HEADER-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Joshua Enrico</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <img src="static/img/sun-solid-84.png" alt="" id="icon">
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="l-main">
+    <!-- HOME -->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi, <br />I'm <span class="home__title-color">Joshua Enrico</span><br />Software developer <br>
+        </h1>
+
+        <a href="#contact" class="button">Contact</a>
+      </div>
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/joshua-claudio-enrico-781390133/" rel="noopener" target="_blank"
+          class="home__social-icon"><i class='bx bxl-linkedin-square' style='color:#336ff3'></i></a>
+
+        <a href="https://twitter.com/joshuaenrico3" rel="noopener" target="_blank" class="home__social-icon"><i class='bx bxl-twitter'
+            style='color:#67bff7'></i></a>
+        <a href="https://github.com/yoyogold-a11" rel="noopener" target="_blank" class="home__social-icon"><i
+            class="bx bxl-github"></i></a>
+      </div>
+      <div class="home__img">
+        <img src="static/img/perfil.png" alt="" />
+      </div>
+    </section>
+    <!-- ABOUT-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about__container biger sit">
         <div>
-          <a href="#" class="nav__logo">Joshua Enrico</a>
+          <h2 class="about__subtitle">I'm Joshua</h2>
+          <p class="about__text">
+            Lover of technology, aviation, programming and geopolitics.
+            As a sport I like football and play it of course, currently venturing into the world of development with a
+            lot of learning, but with much more way ahead, quite motivated and with a fairly high learning and work
+            flow, learning to learn day by day to improve my technical and soft skills.
+          </p>
         </div>
+      </div>
+    </section>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-            <li class="nav__item">
-               <img src="static/img/sun-solid-84.png" alt="" id="icon">
-            </li>
-          </ul>
+    <!-- SKILLS-->
+    <section class="skill section sit" id="skills">
+      <div class="about__container ">
+        <div>
+          <h2 class="about__subtitle">Lenguages and Dev Tools</h2>
+          <p class="about__text">
+            In constant learning to improve my skills and learn new development
+            tools.
+            Currently focused on web development, carrying out personal and commercial projects using HTML, CSS, JS, Git
+            Actions, GIT and AWS.
+          </p>
         </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-    <main class="l-main">
-      <!-- HOME -->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi, <br />I'm <span class="home__title-color">Joshua Enrico</span
-            ><br />Software developer <br> in progress
-          </h1>
-
-          <a href="#contact" class="button">Contact</a>
-        </div>
-        <div class="home__social">
-          <a href="https://www.linkedin.com/in/joshua-claudio-enrico-781390133/" target="_blank" class="home__social-icon"
-            ><i class='bx bxl-linkedin-square' style='color:#336ff3'  ></i></a>
-
-          <a href="https://twitter.com/joshuaenrico3" target="_blank" class="home__social-icon"
-            ><i class='bx bxl-twitter' style='color:#67bff7'  ></i></a>
-          <a href="https://github.com/yoyogold-a11" target="_blank" class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-        <div class="home__img">
-          <img src="static/img/perfil.png" alt="" />
-        </div>
-      </section>
-      <!-- ABOUT-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="static/img/profile.jpg" alt="" />
+      </div>
+      <div class="skills__container bd-grid">
+        <div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxs-copyright skills__icon' style='color:#0767ff'></i>
+              <span class="skills__name">C programming lenguage</span>
+            </div>
+            <div>
+              <span class="skills__percentage">40%</span>
+            </div>
+            <div class="skills__bar skills__c"></div>
           </div>
-          <div>
-            <h2 class="about__subtitle">I'm Joshua</h2>
-            <p class="about__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              esse odit eligendi aut! Ad non dignissimos rem esse ab, laboriosam
-              sit. Atque nostrum sunt eveniet nisi corporis, deleniti reiciendis
-              totam!
-            </p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-python skills__icon' style='color:#2893e5'></i>
+              <span class="skills__name">Python</span>
+            </div>
+            <div>
+              <span class="skills__percentage">40%</span>
+            </div>
+            <div class="skills__bar skills__py"></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-javascript skills__icon' style='color:#f1e104'></i>
+              <span class="skills__name">JavaScript</span>
+            </div>
+            <div>
+              <span class="skills__percentage">30%</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-html5 skills__icon' style='color:#f17805'></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+            <div class="skills__bar skills__html"></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-css3 skills__icon' style='color:#02b8ff'></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
           </div>
         </div>
-      </section>
-
-      <!-- SKILLS-->
-      <section class="skill section" id="skills">
-          <h2 class="section-title">Skills</h2>
-          <div class="skills__container bd-grid">
-              <div>
-                  <h2 class="skills__subtitle">Professionl Skills</h2>
-                  <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, assumenda, beatae ab nobis sequi exercitationem magnam, facilis corrupti fuga quas atque eveniet distinctio! Qui, inventore quod. Esse nulla vitae doloribus!</p>
-                  <div class="skills__data">
-                      <div class="skills__names">
-                        <i class='bx bxs-copyright skills__icon' style='color:#0767ff'  ></i>
-                          <span class="skills__name">C programming lenguage</span>
-                      </div>
-                      <div>
-                          <span class="skills__percentage">40%</span>
-                      </div>
-                      <div class="skills__bar skills__c"></div>
-                  </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-python skills__icon' style='color:#2893e5'  ></i>
-                        <span class="skills__name">Python</span>
-                    </div>
-                    <div>
-                        <span class="skills__percentage">40%</span>
-                    </div>
-                    <div class="skills__bar skills__py"></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-javascript skills__icon' style='color:#f1e104' ></i>
-                        <span class="skills__name">JavaScript</span>
-                    </div>
-                    <div>
-                        <span class="skills__percentage">30%</span>
-                    </div>
-                    <div class="skills__bar skills__js"></div>
-                </div>
-                  <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-html5 skills__icon' style='color:#f17805'  ></i>
-                        <span class="skills__name">HTML5</span>
-                    </div>
-                    <div>
-                        <span class="skills__percentage">60%</span>
-                    </div>
-                    <div class="skills__bar skills__html"></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-css3 skills__icon' style='color:#02b8ff'  ></i>
-                        <span class="skills__name">CSS3</span>
-                    </div>
-                    <div>
-                        <span class="skills__percentage">60%</span>
-                    </div>
-                    <div class="skills__bar skills__css"></div>
-                </div>
-              </div>
-
-              <div>
-                  <img src="static/img/work3.jpg" alt="" class="skills__img">
-              </div>
+        <div>
+          <div class="skills__data" data-sr-id=>
+            <div class="skills__names">
+              <i class='fab fa-aws skills__icon' style='color:#030303'></i>
+              <span class="skills__name">Amazon</span>
+            </div>
+            <div>
+              <span class="skills__percentage">40%</span>
+            </div>
+            <div class="skills__bar skills__c"></div>
           </div>
-      </section>
-
-      <!-- WORK -->
-      <section class="work section" id="work">
-          <h2 class="section-title">Work</h2>
-          
-          <div class="work__container bd-grid">
-              <div class="work__img">
-                <a href="./work.html"><h2 class="work__subtitle">Printf Project</h2></a>
-                  <a href="./work.html"><img src="static/img/printf.jpg"  alt=""></a>
-              </div>
-              <div class="work__img">
-                <h2 class="work__subtitle">Shell Project</h2>
-                <a href="/wok1.html"><img src="static/img/unix.jpg" alt=""></a>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='fab fa-git-alt skills__icon' style='color:#e56d28'></i>
+              <span class="skills__name">Git</span>
             </div>
-            <div class="work__img">
-                <h2 class="work__subtitle">Professionl Skills</h2>
-                <img src="static/img/work3.jpg" alt="">
+            <div>
+              <span class="skills__percentage">40%</span>
             </div>
-            <div class="work__img">
-                <h2 class="work__subtitle">Professionl Skills</h2>
-                <img src="static/img/work4.jpg" alt="">
-            </div>
-            <div class="work__img">
-                <h2 class="work__subtitle">Professionl Skills</h2>
-                <img src="static/img/work5.jpg" alt="">
-            </div>
-            <div class="work__img">
-                <h2 class="work__subtitle">Professionl Skills</h2>
-                <img src="static/img/work6.jpg" alt="">
-            </div>
+            <div class="skills__bar skills__py"></div>
           </div>
-        </section>
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="sent" class="contact__button button">
-                </form>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='fab fa-docker skills__icon' style='color:#2893e5'></i>
+              <span class="skills__name">Docker</span>
             </div>
-        </section>
-    </main>
-    <!--FOOTER-->
-    <footer class="footer">
-        <p class="footer__title">Joshua</p>
-
-        <div class="footer__social">
-            <a href="https://www.facebook.com/joshua.claudioenrico.184/" target="_blank" class="footer__icon"><i class='bx bxl-facebook-square' style='color:#0767ff' ></i></a>
-
-            <a href="https://twitter.com/joshuaenrico3" target="_blank" class="footer__icon"><i class='bx bxl-twitter' style='color:#67bff7'  ></i></a>
-
-            <a href="https://github.com/yoyogold-a11" target="_blank" class="footer__icon"><i class='bx bxl-github' undefined ></i></a>
-
+            <div>
+              <span class="skills__percentage">30%</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-visual-studio skills__icon' style='color:#2893e5'></i>
+              <span class="skills__name">Visual Studio Code</span>
+            </div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+            <div class="skills__bar skills__html"></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-github skills__icon' style='color:#19191a'></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
+          </div>
         </div>
-        <p>&#169; 2021 copyright all right reserves</p>
-    </footer>
-    
-    <!-- SCROLE REVEAL-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+      </div>
+    </section>
 
-    <!--DARK MODE-->
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!-- WORK -->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
 
-    <!-- MAIN JS-->
-    <script src="static/js/main.js"></script>
+      <div class="work__container bd-grid">
+        <div class="work__img">
+          <a href="./work.html">
+            <h2 class="work__subtitle">Printf Project</h2>
+          </a>
+          <a href="./work.html"><img src="static/img/printf.jpg" alt=""></a>
+        </div>
+        <div class="work__img">
+          <h2 class="work__subtitle">Shell Project</h2>
+          <a href="/wok1.html"><img src="static/img/unix.jpg" alt=""></a>
+        </div>
+        <div class="work__img">
+          <h2 class="work__subtitle">Airbnb Clone</h2>
+          <a href="Airbnb-clone.html"><img src="static/img/image (86).png" alt=""></a>
+        </div>
+        <div class="work__img">
+          <h2 class="work__subtitle">Web Page</h2>
+          <a href="/Web-page.html"><img src="static/img/image (87) (1).png" alt=""></a>
+        </div>
+        <div class="work__img">
+          <h2 class="work__subtitle">Stack and Queue</h2>
+          <a href="Stack-queue.html"><img src="static/img/image (89) (1).png" alt=""></a>
+        </div>
+        <div class="work__img">
+          <h2 class="work__subtitle">Sorting Algorithm</h2>
+          <a href="Sortin-algorithm.html"><img src="static/img/image (88) (1).png" alt=""></a>
+        </div>
+      </div>
+    </section>
 
-  </body>
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+   </form>
+      <div class="contact__container bd-grid">
+        <form action="https://formsubmit.co/c4935bd868963a5d970dff45aabe9450" method="POST" class="contact__form">
+          <input type="text" name="name" placeholder="Name" class="contact__input" required>
+          <input type="hidden" name="_subject" value="New Email!!">
+          <input type="mail" name="email" placeholder="Email" class="contact__input" required>
+          <input type="text" name="Subject" placeholder="Message" required class="contact__input">
+          <input type="hidden" name="_next" value="https://joshua-enrico.vercel.app/#contact">
+          <input type="submit" value="sent" id="12" class="contact__button button">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </section>
+  </main>
+  <!--FOOTER-->
+  <footer class="footer">
+    <p class="footer__title">Joshua</p>
+
+    <div class="footer__social">
+      <a href="https://www.facebook.com/joshua.claudioenrico.184/" rel="noopener" target="_blank" class="footer__icon"><i
+          class='bx bxl-facebook-square' style='color:#0767ff'></i></a>
+
+      <a href="https://twitter.com/joshuaenrico3" rel="noopener" target="_blank" class="footer__icon"><i class='bx bxl-twitter'
+          style='color:#67bff7'></i></a>
+
+      <a href="https://github.com/Joshua-Enrico" rel="noopener" target="_blank" class="footer__icon"><i class='bx bxl-github'
+          undefined></i></a>
+
+    </div>
+    <p>&#169; 2021 copyright all right reserves</p>
+  </footer>
+
+  <!-- SCROLE REVEAL-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--DARK MODE-->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+  <!-- MAIN JS-->
+  <script src="static/js/main.js"></script>
+
+</body>
+
 </html>
