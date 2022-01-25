@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const HeaderComp = styled.div`
     width: 100%;
+    max-width: 998px;
     background: transparent;
     position: fixed;
-    top: 0px;
-    left: 0px;
+
     z-index: ${props => props.theme.zFixed};
     transition: .4s;
 `
@@ -35,10 +35,14 @@ const Menu = styled.div`
     position: fixed;
     bottom: 1rem;
     background-color: ${props => props.theme.containerColor};
-    width: 90%;
+    width: 30%;
     border-radius: 4rem;
     padding : 1rem 2.25rem;
     backdrop-filter: blur(10px);
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
 `
 
 const Ullist = styled.ul`

@@ -21,6 +21,9 @@ const GlobalStyle = createGlobalStyle`
   body {
         background-color: ${props => props.theme.bodyColor};
         color : ${props => props.theme.textColor};
+        margin:    0 auto;
+        max-width: 998px;
+        align-self: center;
   }
   h1,h2,h3 {
       color: ${props => props.theme.titleColor};
