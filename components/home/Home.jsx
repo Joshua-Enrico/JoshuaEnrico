@@ -9,7 +9,7 @@ const Home = () => {
         <HomeComp id="home">
             <HomeContainer className='grid'>
                 <HomeData>
-                    <HomeSpan>Hello I'm</HomeSpan>
+                    <HomeSpan>Hello I&apos;m</HomeSpan>
                     <HomeName>Joshua Enrico</HomeName>
                     <HomeEducation>Full Stack Developer</HomeEducation>
                     <HomeButtons>
