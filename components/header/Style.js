@@ -3,11 +3,12 @@ import styled from 'styled-components';
 const HeaderComp = styled.div`
     width: 100%;
     max-width: 998px;
-    background: transparent;
+    background: ${props => props.theme.bodyColor};
     position: fixed;
 
     z-index: ${props => props.theme.zFixed};
     transition: .4s;
+    box-shadow: 0 0 .5rem ${props => props.theme.bodyColor};
 `
 
 const NavContainer = styled.div`
@@ -35,7 +36,7 @@ const Menu = styled.div`
     position: fixed;
     bottom: 1rem;
     background-color: ${props => props.theme.containerColor};
-    width: 30%;
+    width: 80%;
     border-radius: 4rem;
     padding : 1rem 2.25rem;
     backdrop-filter: blur(10px);
@@ -59,6 +60,7 @@ const LiAtag = styled.a`
     padding: .4rem;
     display: flex;
     border-radius: 5rem;
+    cursor: pointer;
     & > svg {
         color: ${props => props.theme.textColor};
         font-size: 1.25rem;

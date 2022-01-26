@@ -2,7 +2,8 @@ import React from 'react';
 import {
     AboutBox,
     AboutComp, AboutContainer, AboutData, AboutInfo,
-    H2title, H3Title, ImgAbout, SpanSubtitle, SpanSubtitleInfo
+    Acontact,
+    H2title, H3Title, ImgAbout, PaboutDescription, SpanSubtitle, SpanSubtitleInfo
 } from './Style';
 import {BsFillAwardFill} from 'react-icons/bs';
 import {VscBriefcase} from 'react-icons/vsc';
@@ -35,6 +36,15 @@ const About = () => {
                             <SpanSubtitleInfo>Online 24/7</SpanSubtitleInfo>
                         </AboutBox>
                     </AboutInfo>
+                    <PaboutDescription>
+                        I am a full-stack web developer with a passion for
+                        programming and a love for the web. I have a strong
+                        background in web development and have worked with
+                        various technologies and frameworks. I am currently
+                        working as a full-stack web developer at
+                        <a href="https://www.truelancer.com/"> Truelancer</a>
+                    </PaboutDescription>
+                    <Acontact href="#contact" >Contact Me</Acontact>
                 </AboutData>
             </AboutContainer>
         </AboutComp>);
