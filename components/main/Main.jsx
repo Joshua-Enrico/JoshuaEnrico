@@ -4,6 +4,7 @@ import Header from '../header/Header';
 import Home from '../home/Home';
 import Services from '../services/Services';
 import Skills from '../skills/Skills';
+import Work from '../work/Work';
 import { Main } from './Style'
 const MainComponent = () => {
     return <Main>
@@ -12,6 +13,7 @@ const MainComponent = () => {
         <About/>
         <Skills/>
         <Services/>
+        <Work/>
     </Main>;
 };
 
