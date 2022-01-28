@@ -1,14 +1,38 @@
 import styled from 'styled-components';
+import { MobileSM, Tablet } from '../../styles/Responsive';
 
 
 const HomeComp = styled.section`
     padding: 6.5rem 1.5rem 1rem;
+    
+
 
 `
 const HomeContainer = styled.div`
     position: relative;
     row-gap: 4.5rem;
     padding-top: 1rem;
+    
+    & > a {
+        cursor: pointer;
+        position: absolute;
+        color: ${props => props.theme.firstColor};
+        right: -1.5rem;
+        bottom: 5rem;
+        display: grid;
+        row-gap: 2.25rem;
+        justify-content: center;
+        align-items: center;
+    
+        & > svg{
+            align-self: center;
+            width: 4.8rem;
+            font-size: 1.5rem;
+            ${Tablet({
+                fontSize: '2rem',
+            })}
+        }
+    }
 
 `
 
@@ -42,6 +66,30 @@ const HomeButtons = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+
+    & > a {
+        &.aboutref {
+            cursor: pointer;
+            display: inline-block;
+            background-color: ${props => props.theme.firstColor};
+            color: ${props => props.theme.bodyColor};
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            font-weight: ${props => props.theme.fontMedium};
+            transition: .4s ease-in-out;
+        }
+    
+        &.aboutref {
+            &:hover {
+                background-color: ${props => props.theme.firstColorAlt};
+                color: ${props => props.theme.bodyColor};
+            }
+        }
+    }
+    ${MobileSM({
+        flexDirection: 'column',
+    })}
+
 `
 
 const Abutton = styled.a`
@@ -78,13 +126,27 @@ const HomeHandle = styled.div`
     overflow: hidden;
     background-color: ${props => props.theme.firstColor};
     border-radius: 10rem 10rem 1rem 1rem;
+    ${MobileSM({
+        width: '150px',
+        height: '253px',
+    })}
+    ${Tablet({
+        width: '290px',
+        height: '380px',
+    })}
 `
 
 const HomeImg = styled.img`
     width: 260px;
     height: 240px;
     object-fit: cover;
-
+    ${MobileSM({
+        width: '130px',
+    })}
+    ${Tablet({
+        width: "220px",
+        height: "260px",
+    })}
 `
 
 const HomeSocial = styled.div`
@@ -99,6 +161,9 @@ const HomeSocial = styled.div`
         height: 2px;
         background-color: ${props => props.theme.titleColor};
         transform: rotate(90deg) translate(16px, 3px);
+        ${Tablet({
+            transform: 'rotate(90deg) translate(16px, 0)',
+        })}
     }
 `
 
@@ -116,23 +181,14 @@ const Asocial = styled.a`
         background-color: ${props => props.theme.firstColor};
         color: ${props => props.theme.containerColor};
     }
+    ${Tablet({
+        padding: '.4rem',
+        fontSize: '1.25rem',
+    })}
 `
 
 const Ascroll = styled.a`
-    position: absolute;
-    color: ${props => props.theme.firstColor};
-    right: -1.5rem;
-    bottom: 4rem;
-    display: grid;
-    row-gap: 2.25rem;
-    justify-content: center;
-    align-items: center;
 
-    & > svg{
-        align-self: center;
-        width: 4.8rem;
-        font-size: 1.5rem;
-    }
 `
 
 const Scrollspan = styled.span`

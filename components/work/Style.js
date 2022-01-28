@@ -1,8 +1,9 @@
 import Styled from 'styled-components';
+import { Medium, MediumM, MobileSM, Tablet } from '../../styles/Responsive';
 
 const WorkComp = Styled.section`
     padding: 6.5rem 1.5rem 1rem;
-    margin-bottom: 10rem;
+
     text-align: center;
 `;
 
@@ -16,6 +17,9 @@ const WorkFilter = Styled.div`
     align-items: center;
     column-gap: .75rem;
     margin-bottom: 2rem;
+    ${MobileSM({
+        columnGap: '.25rem',
+    })}
 `;
 
 const WorkItem = Styled.div`
@@ -36,6 +40,7 @@ const WorkItem = Styled.div`
         color: ${props => props.theme.titleColor};
     }
 
+
 `;
 
 const WorkContainer = Styled.div`
@@ -45,6 +50,16 @@ const WorkContainer = Styled.div`
     margin-right: 1rem;
     display: grid;
     padding-top: 1rem;
+    ${Medium({
+        justifyContent: 'center',
+    })}
+    ${MediumM({
+        gridTemplateColumns: 'repeat(2, max-content)',
+        gap: '1rem',
+    })}
+    ${Tablet({
+        gap: '3rem',
+    })}
 `;
 
 const WorkCard = Styled.div`
@@ -69,17 +84,31 @@ const WorkCard = Styled.div`
             transform: scale(1)
 
         }
+    }
+    ${Tablet({
+       padding: "1.25rem",  
+    })}
 `;
 
 const WorkImg = Styled.img`
     border-radius: 1rem;
     margin-bottom: .75rem;
+    ${Medium({
+        width: '295px',
+        
+    })}
+    ${Tablet({
+        marginBottom: '1rem', 
+    })}
 `;
 
 const WorkCartTitle = Styled.h3`
     font-size: ${props => props.theme.normalFont};
     font-weight: ${props => props.theme.fontMedium};
     margin-bottom: .25rem;
+    ${Tablet({
+        marginBottom: '.5rem',
+    })}
 `;
 
 const WorkButton = Styled.a`

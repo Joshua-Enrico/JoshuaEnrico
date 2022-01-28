@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Medium, MobileSM, Tablet } from "../../styles/Responsive";
 
 const ServiceComp = styled.section`
     padding: 6.5rem 1.5rem 1rem;
@@ -22,12 +23,27 @@ const ServiceContainer = styled.div`
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 1rem;
+    ${MobileSM({
+        gridTemplateColumns: '165px',
+        justifyContent: 'center',
+    })}
+    ${Medium({
+        gridTemplateColumns: 'repeat(2, 160px)',
+        justifyContent: 'center',
+    })}
+    ${Tablet({
+        gridTemplateColumns: 'repeat(3, 192px)',
+        columnGap: '3rem',
+    })}
 `;
 
 const ServiceCard = styled.div`
     background-color: ${props => props.theme.containerColor};
     padding: 3rem 1.5rem 1.5rem;
     border-radius: 1rem;
+    ${Tablet({
+        padding: '4rem 2rem 1.5rem',
+    })}
 `;
 
 const ServiceTitle = styled.h3`
@@ -96,7 +112,10 @@ const ModalContent = styled.div`
             }
         }
     }
-
+    ${Medium({
+        width: '500px',
+        padding: '4.5rem 2.5rem 2.5rem',
+    })}
 `;
 
 const ModalTittle = styled.h3`
@@ -110,6 +129,9 @@ const ModalDescription = styled.p`
     text-align: center;
     font-size: ${props => props.theme.smallestFont};
     margin-bottom: 2rem;
+    ${Medium({
+        padding: '0 3.5rem',
+    })}
 `;
 
 const ModalList = styled.ul`

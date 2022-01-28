@@ -5,6 +5,7 @@ import {
     Acontact,
     H2title, H3Title, ImgAbout, PaboutDescription, SpanSubtitle, SpanSubtitleInfo
 } from './Style';
+import { Link } from "react-scroll";
 import {BsFillAwardFill} from 'react-icons/bs';
 import {VscBriefcase} from 'react-icons/vsc';
 import {BiSupport} from 'react-icons/bi';
@@ -44,7 +45,9 @@ const About = () => {
                         working as a full-stack web developer at
                         <a href="https://www.truelancer.com/"> Truelancer</a>
                     </PaboutDescription>
-                    <Acontact href="#contact" >Contact Me</Acontact>
+                    <Link className="link" activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+                            Contact Me
+                    </Link>
                 </AboutData>
             </AboutContainer>
         </AboutComp>);

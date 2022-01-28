@@ -3,6 +3,7 @@ import { Abutton, Ascroll, Asocial, HomeButtons, HomeComp, HomeContainer, HomeDa
 import { AiFillLinkedin, AiFillMediumCircle } from 'react-icons/ai';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BsMouse } from 'react-icons/bs';
+import { Link } from "react-scroll";
 
 const Home = () => {
     return (
@@ -14,7 +15,9 @@ const Home = () => {
                     <HomeEducation>Full Stack Developer</HomeEducation>
                     <HomeButtons>
                         <Abutton className='button ghost' download="" href="Joshua Enrico CV.pdf">Dowload CV</Abutton>
-                        <Abutton href="#about" className='button'>About me</Abutton>
+                        <Link className="aboutref" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+                            About me
+                        </Link>
                     </HomeButtons>
                 </HomeData>
                 <HomeHandle>
@@ -31,10 +34,10 @@ const Home = () => {
                         <AiFillMediumCircle />
                     </Asocial>
                 </HomeSocial>
-                <Ascroll className="scroll" href="#about">
+                <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
                     <BsMouse />
                     <Scrollspan>Scroll Down</Scrollspan>
-                </Ascroll>
+                </Link>
             </HomeContainer>
         </HomeComp>
     )

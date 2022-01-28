@@ -24,11 +24,11 @@ const Services = () => {
             <ServiceContainer className="grid">
                 <ServiceCard>
                     <ServiceTitle>Frontend <br /> Develovement</ServiceTitle>
-                    <ServiceButton onClick={(e) => ActiveModal(e, "a")}>See More <BsArrowRightShort /></ServiceButton>
+                    <ServiceButton onClick={(e) => ActiveModal(e, "ma")}>See More <BsArrowRightShort /></ServiceButton>
                     {/*modal Container*/}
-                    <ServiceModal id="a">
+                    <ServiceModal id="ma">
                         <ModalContent>
-                            <GrFormClose onClick={(e) => CloseModal(e, "a")}/>
+                            <GrFormClose onClick={(e) => CloseModal(e, "ma")}/>
                             <ModalTittle>Frontend <br /> Develovement</ModalTittle>
                             <ModalDescription>
                                 Development in React in a Node.js and Nextjs environment, focused on the consumption of apis and logic in the front
@@ -62,11 +62,11 @@ const Services = () => {
 
                 <ServiceCard>
                     <ServiceTitle>Backend <br /> Develovement</ServiceTitle>
-                    <ServiceButton onClick={(e) => ActiveModal(e, "b")}>See More <BsArrowRightShort /></ServiceButton>
+                    <ServiceButton onClick={(e) => ActiveModal(e, "mb")}>See More <BsArrowRightShort /></ServiceButton>
                     {/*modal Container*/}
-                    <ServiceModal id="b">
+                    <ServiceModal id="mb">
                         <ModalContent>
-                            <GrFormClose onClick={(e) => CloseModal(e, "b")}/>
+                            <GrFormClose onClick={(e) => CloseModal(e, "mb")}/>
                             <ModalTittle>Backend <br /> Develovement</ModalTittle>
                             <ModalDescription>
                                 Development in Node.js, Next.js, MySQL database, MongoDb
@@ -99,11 +99,11 @@ const Services = () => {
 
                 <ServiceCard>
                     <ServiceTitle>Api <br /> Design</ServiceTitle>
-                    <ServiceButton onClick={(e) => ActiveModal(e, "c")}>See More <BsArrowRightShort /></ServiceButton>
+                    <ServiceButton onClick={(e) => ActiveModal(e, "mc")}>See More <BsArrowRightShort /></ServiceButton>
                     {/*modal Container*/}
-                    <ServiceModal id="c">
+                    <ServiceModal id="mc">
                         <ModalContent>
-                            <GrFormClose onClick={(e) => CloseModal(e, "c")}/>
+                            <GrFormClose onClick={(e) => CloseModal(e, "mc")}/>
                             <ModalTittle>Api Design</ModalTittle>
                             <ModalDescription>
                                 Construction of Rest API and graphQL api

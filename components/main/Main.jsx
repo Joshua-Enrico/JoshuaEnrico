@@ -1,5 +1,7 @@
 import React from 'react';
 import About from '../about/About';
+import Contact from '../contact/Contact';
+import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import Home from '../home/Home';
 import Services from '../services/Services';
@@ -14,6 +16,8 @@ const MainComponent = () => {
         <Skills/>
         <Services/>
         <Work/>
+        <Contact/>
+        <Footer/>
     </Main>;
 };
 

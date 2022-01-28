@@ -20,9 +20,6 @@ export default function Home() {
       <MainComponent/>
       </ThemeProvider>
 
-      <footer >
-
-      </footer>
     </div>
   )
 }
