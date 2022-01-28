@@ -20,7 +20,7 @@ const ServiceContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     display: grid;
-    gap: 1.5rem;
+    gap: .85rem;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 1rem;
     ${MobileSM({
