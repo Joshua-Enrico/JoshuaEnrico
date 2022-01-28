@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Medium, MobileSM, Tablet } from "../../styles/Responsive";
+import { Medium, MobileMS, MobileSM, Tablet } from "../../styles/Responsive";
 
 const ServiceComp = styled.section`
     padding: 6.5rem 1.5rem 1rem;
@@ -20,7 +20,7 @@ const ServiceContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     display: grid;
-    gap: .85rem;
+    gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 1rem;
     ${MobileSM({
@@ -31,10 +31,16 @@ const ServiceContainer = styled.div`
         gridTemplateColumns: 'repeat(2, 160px)',
         justifyContent: 'center',
     })}
+
     ${Tablet({
         gridTemplateColumns: 'repeat(3, 192px)',
         columnGap: '3rem',
     })}
+    ${MobileMS({
+        gridTemplateColumns: 'repeat(2, 130px)',
+        columnGap: '3rem',
+    })}
+    
 `;
 
 const ServiceCard = styled.div`
@@ -49,6 +55,9 @@ const ServiceCard = styled.div`
 const ServiceTitle = styled.h3`
     font-size: ${props => props.theme.h3Font};
     margin-bottom: 2.5rem;
+    ${MobileMS({
+        fontSize: '.65rem',
+    })}
 `;
 
 const ServiceButton = styled.span`

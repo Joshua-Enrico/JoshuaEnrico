@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Medium, MobileSM, Tablet } from '../../styles/Responsive';
+import { Medium, MobileMS, MobileSM, Tablet } from '../../styles/Responsive';
 
 
 const SkillComp = styled.section`
@@ -32,6 +32,9 @@ const SkillContainer = styled.div`
         gridTemplateColumns: 'repeat(2, 350px)',
         columnGap: '3rem',
     })}
+    ${MobileMS({
+        gridTemplateColumns: 'repeat(1, 300px)',
+    })}
 `;
 
 const SkillBoxContent = styled.div`
@@ -49,6 +52,7 @@ const SkillTitle = styled.h3`
     color: ${props => props.theme.firstColor};
     text-align: center;
     margin-bottom: 1.5rem;
+
 `;
 
 const SkillsBox = styled.div`
@@ -88,7 +92,9 @@ const SkillName = styled.h3`
     ${MobileSM({
         fontSize: props => props.theme.smallestFont,
     })}
-
+    ${MobileMS({
+        fontSize: '.70rem',
+    })}
     `;
 
 const SkillLvl = styled.span`
