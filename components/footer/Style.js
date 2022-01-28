@@ -10,6 +10,12 @@ const FooterComp = Styled.footer`
         left: "0",
         width: "100%",
     })}
+    @media only screen and (min-width: 367px) {
+        padding: 1rem;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
     
     `;
 

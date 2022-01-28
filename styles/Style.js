@@ -1,5 +1,6 @@
 
 import { createGlobalStyle } from 'styled-components'
+import {Mobile} from '../styles/Responsive'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -58,7 +59,6 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
         background-color: ${props => props.theme.bodyColor};
   }
-
 }
 `
 
