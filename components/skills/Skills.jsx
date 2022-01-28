@@ -54,13 +54,7 @@ const Skills = () => {
                                     <SkillLvl>Basic</SkillLvl>
                                 </SkillContent>
                             </SkillsData>
-                            <SkillsData>
-                                <HiBadgeCheck />
-                                <SkillContent>
-                                    <SkillName></SkillName>
-                                    <SkillLvl></SkillLvl>
-                                </SkillContent>
-                            </SkillsData>
+
                         </SkillsGroups>
                     </SkillsBox>
                 </SkillBoxContent>
@@ -89,6 +83,13 @@ const Skills = () => {
                                     <SkillLvl>Intermediate</SkillLvl>
                                 </SkillContent>
                             </SkillsData>
+                            <SkillsData>
+                                <HiBadgeCheck />
+                                <SkillContent>
+                                    <SkillName>GraphQL</SkillName>
+                                    <SkillLvl>Intermediate</SkillLvl>
+                                </SkillContent>
+                            </SkillsData>
                         </SkillsGroups>
                         <SkillsGroups>
                             <SkillsData>
@@ -109,13 +110,6 @@ const Skills = () => {
                                 <HiBadgeCheck />
                                 <SkillContent>
                                     <SkillName>MySQL/MongoDB</SkillName>
-                                    <SkillLvl>Intermediate</SkillLvl>
-                                </SkillContent>
-                            </SkillsData>
-                            <SkillsData>
-                                <HiBadgeCheck />
-                                <SkillContent>
-                                    <SkillName>GraphQL</SkillName>
                                     <SkillLvl>Intermediate</SkillLvl>
                                 </SkillContent>
                             </SkillsData>

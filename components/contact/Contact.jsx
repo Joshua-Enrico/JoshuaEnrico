@@ -27,7 +27,7 @@ const Contact = () => {
                     <ContactCard>
                         <AiOutlineWhatsApp/>
                         <ContactCardTitle>Whatsapp</ContactCardTitle>
-                        <ContactCardData>99999999</ContactCardData>
+                        <ContactCardData>981194247</ContactCardData>
                         <ContactCardref href="https://api.whatsapp.com/send?phone=51981194247&text=hi, more information!" target="_blank">
                             Write Me
                             <BsArrowRightShort/>

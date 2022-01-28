@@ -93,6 +93,8 @@ const WorkCard = Styled.div`
 const WorkImg = Styled.img`
     border-radius: 1rem;
     margin-bottom: .75rem;
+    height: 170px;
+    object-fit: cover;
     ${Medium({
         width: '295px',
         
