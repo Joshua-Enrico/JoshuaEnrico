@@ -32,7 +32,7 @@ export const MediumM = (props) => {
 }
 export const MobileMS = (props) => {
     return css`
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 420px) {
         ${props}
     }
     `;
